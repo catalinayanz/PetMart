@@ -9,7 +9,7 @@ const Navbar = () => {
                 PetMart
             </Typography>
             <Button sx={{color: "white", fontSize:"18px"}}>
-                Inicio
+                Inicio 
             </Button>
             <Button sx={{color: "white", fontSize:"18px"}}>
                 Categorias
