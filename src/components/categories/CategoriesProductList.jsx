@@ -10,7 +10,7 @@ const CategoriesProductList = () => {
 
     if(loading) return <CircularProgress />
 
-    const categorySelected = data.filter(category => category.category.toLowerCase === categoryId);
+    const categorySelected = data.filter(category => category.category.toLowerCase() === categoryId.toLowerCase());
 
 
 

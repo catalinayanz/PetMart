@@ -1,6 +1,7 @@
-import { Card, CardContent, CircularProgress, Link, Typography } from "@mui/material";
+import { Card, CardContent, CircularProgress, Typography } from "@mui/material";
 import useAsyncMocks from "../hooks/useAsyncMocks";
 import categories from "../mocks/categories.json";
+import { Link } from "react-router-dom"
 
 
 const Categories = () => {
