@@ -1,24 +1,23 @@
-import Categories from './components/categories/Categories'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import ProductList from './components/products/ProductList'
-import CategoriesProductList from './components/categories/CategoriesProductList'
-import Navbar from './components/Navbar/Navbar'
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import "./App.css";
+import { ItemDetailContainer } from "./components/ItemDetailContainer/ItemDetailContainer";
+import { ItemListContainer } from "./components/ItemListContainer/ItemListContainer";
+import Navbar from './components/Navbar/Navbar';
 
 function App() {
 
   return (
-    <>
-      <Router>
-        <Navbar />
-        <Routes>
-          <Route exact path='/' element={<Categories />} />
-          <Route exact path="/products" element={<ProductList />} />
-          <Route exact path="/category/:categoryId" element={<CategoriesProductList />} />
-        </Routes>
-
-      </Router>
-    </>
-  )
+		<div className='container--app'>
+			<BrowserRouter>
+				<Navbar />
+				<Routes>
+					<Route path='/' element={<ItemListContainer />} />
+					<Route path='/category/:idCategory' element={<ItemListContainer />} />
+					<Route	path='/items/:idItem'	element={<ItemDetailContainer />}	/>
+				</Routes>
+			</BrowserRouter>
+		</div>
+  );
 }
 
-export default App
+export default App;

@@ -13,7 +13,7 @@ const ProductDetail = ({product, children}) => {
                     {title}
                 </Typography>
                 <Typography>
-                    {precio.toFixed(2)}
+                    ${precio.toFixed(2)}
                 </Typography>
                 <Typography>
                     {title}

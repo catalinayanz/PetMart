@@ -1,28 +1,37 @@
 import { AppBar, Button, Toolbar, Typography } from '@mui/material';
 import './Navbar.css';
 import CartWidget from '../CartWidget/CartWidget';
+import React from 'react';
+import { NavLink } from "react-router-dom";
 
-const Navbar = () => {
-    return (<AppBar>
-        <Toolbar className='toolbar_navbar' sx={{display: "flex", justifyContent:"space-evenly"}}>
-            <Typography sx={{color: "black", fontSize: "25px"}}>
-                PetMart
-            </Typography>
-            <Button sx={{color: "white", fontSize:"18px"}}>
-                Inicio 
-            </Button>
-            <Button sx={{color: "white", fontSize:"18px"}}>
-                Categorias
-            </Button>
-            <Button sx={{color: "white", fontSize:"18px"}}>
-                Productos
-            </Button>
-            <Button sx={{color: "white", fontSize:"18px"}}>
-                 Nosotros    
-            </Button>
-            <CartWidget />    
-        </Toolbar>
-    </AppBar>);
+export const Navbar = () => {
+    return (
+        <div className='container'>
+            <nav className='nav'>
+                <div className='brand'>
+                <NavLink className={nav__link} to='/'>Inicio</NavLink>
+                </div>
+                <ul className='nav__list'>
+                <li>
+                    <NavLink className={nav__link} to='/category/juguetes'>Juguetes</NavLink>                        
+                    </li>
+                    <li>
+                    <NavLink className={nav__link} to='/category/abrigos'>Abrigos</NavLink>                        
+                    </li>
+                    <li>
+                    <NavLink className={nav__link} to='/category/medicamentos'>Medicamentos</NavLink>                        
+                    </li>
+                    <li>
+                    <NavLink className={nav__link} to='/category/otros'>Otros</NavLink>                        
+                    </li>
+                    <li>
+                    <NavLink className={nav__link} to='/cart'>Cart</NavLink>
+                    <CartWidget/>                        
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    );
 }
 
 export default Navbar;
