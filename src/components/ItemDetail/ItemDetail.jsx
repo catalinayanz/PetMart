@@ -1,4 +1,3 @@
-import { ItemCount } from "../ItemCount/ItemCount";
 
 export const ItemDetail = ({ itemFiltered }) => {
 	return (
@@ -16,7 +15,6 @@ export const ItemDetail = ({ itemFiltered }) => {
 			<div className='itemDetail--description'>
 				{itemFiltered.description}
 			</div>
-			<ItemCount stock={itemFiltered.stock} />
 		</section>
 	);
 };
