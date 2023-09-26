@@ -1,9 +1,9 @@
 import { CircularProgress, Grid, Typography } from "@mui/material";
 import useAsyncMocks from "../hooks/useAsyncMocks";
 import products from "../mocks/products.json"
-import ProductDetail from "./productDetail";
+import Item from "../Item/Item";
 
-const productList = () => {
+const ProductList = () => {
     const {data, loading} = useAsyncMocks(products)
 
     if(loading) return <CircularProgress/>
@@ -15,8 +15,8 @@ const productList = () => {
             {
                 data.map((product)=>{
                     return(
-                        <ProductDetail key={product.id} product={product}>
-                        </ProductDetail>
+                        <Item key={product.id} product={product}>
+                        </Item>
                     )
                 })
             }
@@ -26,4 +26,4 @@ const productList = () => {
 
 }
 
-export default productList;
+export default ProductList;

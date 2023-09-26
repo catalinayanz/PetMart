@@ -2,7 +2,7 @@ import { useParams } from "react-router-dom";
 import useAsyncMock from "../hooks/useAsyncMocks";
 import products from "../mocks/products.json";
 import { CircularProgress, Grid } from "@mui/material";
-import ProductDetail from "../products/ProductDetail";
+import Item from "../Item/Item";
 
 const CategoriesProductList = () => {
     const {categoryId} = useParams();
@@ -17,7 +17,7 @@ const CategoriesProductList = () => {
     return( <div>
         <Grid container spacing={3}>
             {categorySelected.map((product)=>{
-                return <ProductDetail key={product.id} product={product}/>
+                return <Item key={product.id} product={product}/>
             })}
              </Grid>
     </div>
