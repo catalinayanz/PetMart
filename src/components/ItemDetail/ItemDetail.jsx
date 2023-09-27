@@ -1,3 +1,4 @@
+import "./ItemDetail.css";
 
 export const ItemDetail = ({ itemFiltered }) => {
 	return (
