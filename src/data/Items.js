@@ -1,5 +1,5 @@
-export const products = [  { "id": 1, "title": "Kong", "precio": 15000, "imagen": "../asset/imagenes/Kong-extreme-negro.jpg", "cantidad": 1, "category": "Juguetes"},
-{ "id": 2, "title": "Sogas", "precio": 2000, "imagen": "../asset/imagenes/Soga.jpg", "cantidad": 1, "category": "Juguetes"},
+export const products = [  { "id": 1, "title": "Kong", "precio": 15000, "imagen": "https://m.media-amazon.com/images/I/61VAFKv2bJL.__AC_SX300_SY300_QL70_FMwebp_.jpg", "cantidad": 1, "category": "Juguetes"},
+{ "id": 2, "title": "Sogas", "precio": 2000, "imagen": "https://toquipetshop.com.ar/wp-content/uploads/2023/01/Soga-2-nudos-2.png", "cantidad": 1, "category": "Juguetes"},
 { "id": 3, "title": "Huesos", "precio": 700, "imagen": "../asset/imagenes/Huesitos.jpg", "cantidad": 1, "category": "Juguetes"},
 { "id": 4, "title": "Frisbee", "precio": 3000, "imagen": "../asset/imagenes/frisbee.webp", "cantidad": 1, "category": "Juguetes"},
 { "id": 5, "title": "Pelotas (Pack: 3)", "precio": 1000, "imagen": "../asset/imagenes/pelotitaJackRussell.jpg", "cantidad": 1, "category": "Juguetes"},

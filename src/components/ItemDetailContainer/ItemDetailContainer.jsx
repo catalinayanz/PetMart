@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import  { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { products } from "../../data/items";
 import { ItemDetail } from "../ItemDetail/ItemDetail";
@@ -10,13 +10,13 @@ export const ItemDetailContainer = () => {
 
 	const [loading, setLoading] = useState(true);
 
-	const { idItem } = useParams();
+	const { ItemId } = useParams();
 
 	useEffect(() => {
 
 		setLoading(true);
 
-		getItem(idItem) 
+		getItem(ItemId) 
 			.then((response) => setItemFiltered(response))
 
 			.finally(
@@ -24,7 +24,7 @@ export const ItemDetailContainer = () => {
 					setLoading(false);
 				}, 2000)
 			);
-	}, [idItem]);
+	}, [ItemId]);
 
 
 	const getItem = (valueToFilter) => {

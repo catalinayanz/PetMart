@@ -1,7 +1,8 @@
+import "./ItemListContainer.css"
 import { useParams } from "react-router-dom";
 import useAsyncMock from "../hooks/useAsyncMocks";
 import products from "../mocks/products.json";
-import { CircularProgress, Grid } from "@mui/material";
+import { CircularProgress } from "@mui/material";
 import { Item } from "../Item/Item";
 
 const CategoriesProductList = () => {
@@ -14,12 +15,10 @@ const CategoriesProductList = () => {
 
 
 
-    return( <div>
-        <Grid container spacing={3}>
+    return( <div className="container--ItemListContainer">
             {categorySelected.map((product)=>{
                 return <Item key={product.id} item={product}/>
             })}
-             </Grid>
     </div>
     );
 }

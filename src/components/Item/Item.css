@@ -1,0 +1,77 @@
+.card {
+	background: hwb(325 81% 2%);
+	width: 300px;
+	height: 400px;
+	margin: 10px;
+	padding: 10px 3px;
+	position: relative;
+	border-radius: 6px;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 1.5em;
+	color: white;
+	cursor: default;
+}
+
+ .card::before {
+	content: "";
+	width: 104%;
+	height: 102%;
+	border-radius: 8px;
+	position: absolute;
+	z-index: -1;
+	top: -1%;
+	left: -2%;
+	animation: spin 2.5s linear infinite;
+}
+
+.card::after {
+	position: absolute;
+	content: "";
+	left: 0;
+	right: 0;
+	z-index: -1;
+	height: 100%;
+	width: 100%;
+	margin: 0 auto;
+	transform: scale(0.8);
+	opacity: 1;
+	transition: opacity 0.5s;
+	animation: spin 2.5s linear infinite;
+}
+
+@keyframes spin {
+	0% {
+		--rotate: 0deg;
+	}
+	100% {
+		--rotate: 360deg;
+	}
+}
+
+.card--title {
+    color: black;
+	width: 95%;
+	height: 50px;
+	font-size: 20px;
+}
+.card--img {
+	width: 70%;
+	height: 180px;
+}
+.card--price {
+	color: black;
+}
+
+.card--more {
+	text-decoration: none;
+	color: black;
+} 
+.card--more:hover {
+    color: white;
+}
