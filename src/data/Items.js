@@ -11,5 +11,8 @@ export const products = [  { "id": 1, "title": "Kong", "price": 15000, "img": "h
 { "id": 11, "title": "Otidermico", "price": 1000, "img": "https://acdn.mitiendanube.com/stores/002/013/037/products/31-1b77a85f8823ebde8516525614387712-640-0.webp", "cantidad": 1, "category": "Medicamentos"},
 { "id": 12, "title": "Nexgard", "price": 3000, "img": "https://traviesospetshop.com.ar/wp-content/uploads/2019/11/Nexgard-25-a-50kg.png", "cantidad": 1, "category": "Medicamentos"},
 { "id": 13, "title": "Tachitos", "price": 2000, "img": "https://http2.mlstatic.com/D_NQ_NP_878955-MLA44769394806_022021-O.webp", "cantidad": 1, "category": "Otros"},
-{ "id": 14, "title": "Cuchas", "price": 7000, "img": "https://mariacasanova.com/wp-content/uploads/2021/05/DSC0619-2-scaled.jpg", "cantidad": 1, "category": "Otros"}
+{ "id": 14, "title": "Cuchas", "price": 7000, "img": "https://mariacasanova.com/wp-content/uploads/2021/05/DSC0619-2-scaled.jpg", "cantidad": 1, "category": "Otros"},
+{"id": 15, "title": "Raton (Pack x2)", "price": 2000, "img":"https://http2.mlstatic.com/D_NQ_NP_719716-MLA44876735699_022021-O.webp","cantidad": 1, "category": "Juguetes"},     
+{"id": 16, "title": "Torre Catch", "price": 5000, "img":"https://http2.mlstatic.com/D_NQ_NP_803666-MLA47352742010_092021-O.webp","cantidad": 1, "category": "Juguetes"},
+{"id": 17, "title": "Varita", "price": 3000, "img":"https://www.cosasdegatos.es/wp-content/uploads/2016/05/gato-jugando-varita-1170x780.jpg","cantidad": 1, "category": "Juguetes"}
 ]
