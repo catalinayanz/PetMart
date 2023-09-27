@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import "./Item.css"
+import PropTypes from 'prop-types';
 
 export const Item = ({ item }) => {
 	return (
@@ -13,3 +14,7 @@ export const Item = ({ item }) => {
 		</div>
 	);
 };
+
+Item.propTypes = {
+	item: PropTypes.string.isRequired,
+}

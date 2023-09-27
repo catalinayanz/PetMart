@@ -1,6 +1,6 @@
 import { CircularProgress, Grid, Typography } from "@mui/material";
 import useAsyncMocks from "../hooks/useAsyncMocks";
-import products from "../mocks/products.json"
+import products from "../mocks/products.json";
 import Item from "../Item/Item";
 import "./productList.css"
 

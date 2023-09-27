@@ -1,4 +1,3 @@
-import { AppBar, Button, Toolbar, Typography } from '@mui/material';
 import './Navbar.css';
 import CartWidget from '../CartWidget/CartWidget';
 import { NavLink } from "react-router-dom";

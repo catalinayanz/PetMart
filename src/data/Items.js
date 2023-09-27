@@ -1,4 +1,4 @@
-export const products = [  { "id": 1, "title": "Kong", "price": 15000, "img": "https://m.media-amazon.com/images/I/61VAFKv2bJL.__AC_SX300_SY300_QL70_FMwebp_.jpg", "cantidad": 1, "category": "Juguetes"},
+export const products = [  { "id": 1, "title": "Kong", "price": 15000, "img": "https://http2.mlstatic.com/D_NQ_NP_856675-MLA31062982392_062019-O.webp", "cantidad": 1, "category": "Juguetes"},
 { "id": 2, "title": "Sogas", "price": 2000, "img": "https://toquipetshop.com.ar/wp-content/uploads/2023/01/Soga-2-nudos-2.png", "cantidad": 1, "category": "Juguetes"},
 { "id": 3, "title": "Huesos", "price": 700, "img": "https://www.shoppingchina.com.py/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ1RRIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--1434cad145975a341508378673a84bebcb7c33d6/578256.jpg", "cantidad": 1, "category": "Juguetes"},
 { "id": 4, "title": "Frisbee", "price": 3000, "img": "https://d28hi93gr697ol.cloudfront.net/071e89ac-46a5-8ab3/img/Producto/1607/05-1612902132-632128eb877bb.webp", "cantidad": 1, "category": "Juguetes"},

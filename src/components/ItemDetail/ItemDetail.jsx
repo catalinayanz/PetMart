@@ -1,4 +1,5 @@
 import "./ItemDetail.css";
+import PropTypes from 'prop-types';
 
 export const ItemDetail = ({ itemFiltered }) => {
 	return (
@@ -19,3 +20,7 @@ export const ItemDetail = ({ itemFiltered }) => {
 		</section>
 	);
 };
+
+ItemDetail.propTypes = {
+	itemFiltered: PropTypes.string.isRequired,
+}
